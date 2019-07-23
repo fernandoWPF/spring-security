@@ -4,13 +4,13 @@ import org.springframework.security.core.GrantedAuthority;
 
 public class Permissao implements GrantedAuthority {
 
-    private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 1L;
 
-    private String permissao;
+	private String nome;
 
-    @Override
-    public String getAuthority() {
-        return permissao;
-    }
+	@Override
+	public String getAuthority() {
+		return nome;
+	}
 
 }
